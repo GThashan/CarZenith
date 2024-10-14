@@ -8,7 +8,7 @@ function Hero() {
     console.log("clicked");
   };
   return (
-    <div className="px-6 lg:px-16  h-[100vh] lg:flex justify-between items-center relative">
+    <div className="mt-15 px-6 lg:pr-0 pl-16  h-[100vh] lg:flex justify-between items-center relative">
       <div className="lg:w-1/2">
         <h1 className="font-bold text-[36px] lg:text-[48px] xl:text-[56px] leading-tight lg:leading-snug">
           Find, Book or Rent a car - quickly and easily
@@ -26,18 +26,8 @@ function Hero() {
         />
       </div>
 
-      <div className="relative lg:w-1/2 flex justify-end ">
-        <div className=" z-10 w-[80%] lg:w-[100%] ">
-          <Image src="/Heroimg.png" alt="hero" width={500} height={400} />
-        </div>
-        <div className="absolute hover:bottom-0 hover:right-0 w-[100%] lg:w-[100%]">
-          <Image
-            src="/hero-bg.png"
-            alt="hero background"
-            width={800}
-            height={700}
-          />
-        </div>
+      <div className="relative  flex justify-end  w-1/2 bg-[url('/hero-bg.png')] bg-cover bg-no-repeat ">
+        <Image src="/Heroimg.png" alt="hero" width={500} height={400}  className="z-10 w-full animate-fadeInRight "/>
       </div>
     </div>
   );
